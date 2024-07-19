@@ -12,7 +12,7 @@ jobs:
     env:
       FB_TOKEN: ${{ secrets.FB_TOKEN }}
       IMG_TOKEN: ${{ secrets.IMG_TOKEN }}
-      GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+      GIT_PAT: ${{ secrets.GIT_PAT }}
       TENOR_TOKEN: ${{ secrets.TENOR_TOKEN }}
 
       # actions variables
