@@ -45,6 +45,13 @@ def main():
     # Get page_id from your facebook page
     get_id()
     
+    if data.FB_TOKEN:
+        print('fb token ok')
+        if data.GITHUB_TOKEN:
+            print('github token ok')
+            if data.IMG_TOKEN:
+                print('img token ok')
+    
     start: float = time()
     while (time() - start) < (180 * 60):  # 3 hours
         asyncio.run(run_script())
