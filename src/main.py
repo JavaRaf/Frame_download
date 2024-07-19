@@ -47,10 +47,19 @@ def main():
     
     if data.FB_TOKEN:
         print('fb token ok')
-        if data.GITHUB_TOKEN:
-            print('github token ok')
-            if data.IMG_TOKEN:
-                print('img token ok')
+    
+    else:
+        print('Necessary token not provided')
+        
+    if data.GITHUB_TOKEN:
+        print('github token ok')
+    else:
+        print('Necessary tokens not provided')
+        
+    if data.IMG_TOKEN:
+        print('img token ok')
+    else:
+        print('Necessary img token not provided')
     
     start: float = time()
     while (time() - start) < (180 * 60):  # 3 hours
