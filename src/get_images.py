@@ -11,7 +11,7 @@ async def download_images(session, EP: str, FRAME: str) -> str:
     url = f'https://raw.githubusercontent.com/{REPO_OWNER}/{FRAME_PASTE}/{BRANCH}/EP-{EP}/frame_{FRAME}.jpg'
     
     headers = {
-        'Authorization': f'Bearer {data.GITHUB_TOKEN}'
+        'Authorization': f'Bearer {data.GIT_PAT}'
     }
     
     try:
@@ -47,7 +47,7 @@ def sync_download_frame(EP, FRAME) -> str:
     
     url = f'https://raw.githubusercontent.com/{data.REPO_OWNER}/{data.REPO_FRAMES_NAME}/{data.GITHUB_FRAMES_BRANCH}/EP-{EP}/frame_{FRAME}.jpg'
     
-    headers = {'Authorization': f'Bearer {data.GITHUB_TOKEN}'}
+    headers = {'Authorization': f'Bearer {data.GIT_PAT}'}
     
     try:
         response = httpx.get(url, headers=headers)

@@ -51,7 +51,7 @@ def main():
     else:
         print('Necessary token not provided')
         
-    if data.GITHUB_TOKEN:
+    if data.GIT_PAT:
         print('github token ok')
     else:
         print('Necessary tokens not provided')

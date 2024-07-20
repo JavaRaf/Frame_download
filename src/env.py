@@ -17,7 +17,7 @@ class data:
     REPO_OWNER: str = os.environ.get('REPO_OWNER')  # seu nome de usuario do github
 
     git_this_branch: str = os.environ.get('BRANCH') # THIS_BRANCH
-    GITHUB_TOKEN: str = os.environ.get('GITHUB_PAT')  
+    GIT_PAT: str = os.environ.get('GIT_PAT')  
     
     # tenor token
     TENOR_TOKEN: str = os.environ.get('TENOR_TOKEN')
